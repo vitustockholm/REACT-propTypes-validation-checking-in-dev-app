@@ -15,10 +15,10 @@ const Card = ({ name, email, age, expires }) => {
 };
 
 Card.propTypes = {
-  name: PropTypes.string,
-  email: PropTypes.string,
-  age: PropTypes.number,
-  expires: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  expires: PropTypes.number.isRequired,
 };
 
 export default Card;

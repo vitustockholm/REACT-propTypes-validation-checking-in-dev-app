@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import PropTypes from 'prop-types'; // imp <- snippet
+import PropTypes from 'prop-types'; // impt <- snippet
 
 const MatchButton = ({ text, action, numbers }) => {
   const buttonRef = useRef();
@@ -17,10 +17,10 @@ const MatchButton = ({ text, action, numbers }) => {
 };
 
 MatchButton.proTypes = {
-  text: PropTypes.string,
-  action: PropTypes.sting,
+  text: PropTypes.string.isRequired,
+  action: PropTypes.func.isRequired,
   // numbers: PropTypes.arrayOf(PropTypes.number),
-  numbers: PropTypes.array,
+  numbers: PropTypes.array.isRequired,
 };
 
 export default MatchButton;
