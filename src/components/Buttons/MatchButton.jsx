@@ -20,7 +20,10 @@ MatchButton.proTypes = {
   text: PropTypes.string.isRequired,
   action: PropTypes.func.isRequired,
   // numbers: PropTypes.arrayOf(PropTypes.number),
-  numbers: PropTypes.array.isRequired,
+  // numbers: PropTypes.array.isRequired,
+  /////////////
+  //case for numbers array data format
+  numbers: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
 export default MatchButton;

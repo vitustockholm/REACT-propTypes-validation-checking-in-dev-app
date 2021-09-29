@@ -1,11 +1,15 @@
 import './App.css';
 // import Card from './components/Card';
 import MatchButton from './components/Buttons/MatchButton';
-import MessageButton from './components/MessageButton';
+import MessageButton from './components/Buttons/MessageButton';
 import Greeting from './components/Greeting';
 
 import Book from './components/helpers/Books';
 // import AnotherBook from './components/helpers/Books';
+
+import Accountcard from './components/AccountCard';
+import CounterButton from './components/Buttons/CounterButton';
+import Button from './components/Buttons/Button';
 
 function App() {
   //Custom functions
@@ -37,9 +41,27 @@ function App() {
       <MessageButton
         message={<Greeting />}
         book={harryPotter}
-        showText='Show message'
-        hideText='Hide message'
+        showText='Show Message'
+        hideText='Hide Message'
       />
+      <hr />
+      <Accountcard
+        user={{
+          name: 'Homer',
+          surname: 'Simpson',
+          email: 'homer@simpsons.com',
+          age: 37,
+          friends: ['Barney', 'Lenny', 'Carl', 'Mo'],
+        }}
+      />
+      <hr />
+      <CounterButton value={[4, 5, 5, 20, 50, 80]} />
+      <hr />
+      <Button action={() => console.log('Hellow101!')} />
+      <Button text='Click Me Too!' action={() => console.log('Hellow1011!')} />
+      <hr />
+      <Button text='Please,click me' />
+      <Button />
     </div>
   );
 }

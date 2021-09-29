@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Greeting = () => {
-  return <p>HellowWorld101</p>;
+  return <p>Show message</p>;
 };
 
 export default Greeting;

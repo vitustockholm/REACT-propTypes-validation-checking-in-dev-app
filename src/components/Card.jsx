@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'; // imp <- snippet
+import PropTypes from 'prop-types'; // impt <- snippet
 
 const Card = ({ name, email, age, expires }) => {
   return (
